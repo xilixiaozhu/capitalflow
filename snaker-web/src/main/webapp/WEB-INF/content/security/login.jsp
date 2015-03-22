@@ -4,7 +4,7 @@
 <html lang="en">
 	<head>
     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    	<title>Snaker</title>
+    	<title>江淮汽车线束零件管理系统---JAC Components Database(JCDB)</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link href="${ctx}/styles/bootstrap/2.2.2/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 		<link href="${ctx}/styles/css/login.css" type="text/css" rel="stylesheet" />
@@ -48,13 +48,13 @@
 					<div class="control-group">
 						<label class="control-label" for="username">账号：</label>
 						<div class="controls">
-							<input type="text" class="" id="username" name="username" value="admin" autocomplete="off"/>
+							<input type="text" class="" id="username" name="username" value="" autocomplete="off"/>
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="password">密码：</label>
 						<div class="controls">
-							<input type="password" class="" id="password" name="password" value="123456"/>
+							<input type="password" class="" id="password" name="password" value=""/>
 						</div>
 					</div>
 				</fieldset>
@@ -62,7 +62,6 @@
 				<div id="remember-me" class="pull-left">
 					<input type="checkbox" name="remember" id="remember" /> <label
 						id="remember-label" for="remember">记住我</label>
-					<label>[admin/123456;snaker/123456;test/123456]</label>
 				</div>
 
 				<div class="pull-right">
@@ -76,9 +75,9 @@
 <!-- 			<p>
 				没有账号? <a href="javascript:;">注册</a>
 			</p> -->
-			<p>
+			<!--<p>
 				忘记密码? <a href="forgot_password.html">找回密码</a>
-			</p>
+			</p>-->
 		</div>
 	</div>
 	</body>
