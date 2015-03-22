@@ -64,7 +64,7 @@ $.extend(true, snakerflow.editors, {
 
 			$('<input style="width:88%;" readonly="true" id="dialogEditor"/>').val(props[_k].value).appendTo('#'+_div);
 			$('<input style="width:10%;" type="button" value="选择"/>').click(function(){
-				//alert("选择:" + capitalflow.config.ctxPath + arg);
+				//alert("选择:" + snakerflow.config.ctxPath + arg);
 				var element = document.getElementById("dialogEditor");
 				var l  = window.showModalDialog(snakerflow.config.ctxPath + arg," ","dialogWidth:800px;dialogHeight:540px;center:yes;scrolling:yes");
 				if (l == null )

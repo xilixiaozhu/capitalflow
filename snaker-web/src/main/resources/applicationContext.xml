@@ -12,7 +12,7 @@
 	
 	<context:annotation-config/>
 
-	<context:component-scan base-package="com.capitalflow" />
+	<context:component-scan base-package="com.snakerflow" />	
 
 	<!-- 定义受环境影响易变的变量 -->
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -25,7 +25,7 @@
 		</property>
 	</bean>
 
-    <bean id="executor" class="com.capitalflow.framework.flow.service.ScriptsExecutor" init-method="run">
+    <bean id="executor" class="com.snakerflow.framework.flow.service.ScriptsExecutor" init-method="run">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
@@ -60,10 +60,10 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
-			    <value>com.capitalflow.framework.security.entity</value>
-                <value>com.capitalflow.framework.flow.entity</value>
-                <value>com.capitalflow.framework.config.entity</value>
-                <value>com.capitalflow.app.modules.entity</value>
+			    <value>com.snakerflow.framework.security.entity</value>
+                <value>com.snakerflow.framework.flow.entity</value>
+                <value>com.snakerflow.framework.config.entity</value>
+                <value>com.snakerflow.app.modules.entity</value>
 			</list>
 		</property>
 		<property name="mappingResources">
@@ -119,8 +119,8 @@
 	 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice" pointcut="execution(* org.snaker.engine.core..*.*(..))
-		or execution(* com.capitalflow.app.modules.service..*.*(..))
-		or execution(* com.capitalflow.framework.*.service..*.*(..))"/>
+		or execution(* com.snakerflow.app.modules.service..*.*(..))
+		or execution(* com.snakerflow.framework.*.service..*.*(..))"/>
 	</aop:config>
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 </beans>
