@@ -19,32 +19,56 @@
 			<c:forEach items="${vars}" var="item">
 			<table class="table_all" align="center" border="0" cellpadding="0"
 			cellspacing="0" style="margin-top: 0px">
+
+
+
+
 				<tr>
-					<td class="td_table_1"><span>请假人名称：</span></td>
+					<td class="td_table_1"><span>零件名称：</span></td>
 					<td class="td_table_2" colspan="3">
-						&nbsp;${item['apply.operator']}
+						<input type="text" readonly="readonly" class="input_240" name="S_componentname" value="${item['componentname']}" />
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>请假理由：</span></td>
+					<td class="td_table_1"><span>零件描述：</span></td>
 					<td class="td_table_2" colspan="3">
-						&nbsp;${item['reason'] }
+						<textarea class="input_textarea_320" readonly="readonly" id="description" name="S_description">${item['description']}</textarea>
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>请假天数：</span></td>
+					<td class="td_table_1"><span>Customer Part Number：</span></td>
 					<td class="td_table_2" colspan="3">
-						&nbsp;${item['day'] }天
+						<input type="text" class="input_240" readonly="readonly" id="customerpartnumber" name="S_customerpartnumber" value="${item['customerpartnumber']}" />
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>部门经理：</span></td>
-					<td class="td_table_2">
-						&nbsp;${item['approveDept.operator']}
+					<td class="td_table_1"><span>Customer Name：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" readonly="readonly" id="customername" name="S_customername" value="${item['customername']}" />
 					</td>
-					<td class="td_table_1"><span>总经理：</span></td>
-					<td class="td_table_2">
-						&nbsp;${item['approveBoss.operator']}
+				</tr>
+				<tr>
+					<td class="td_table_1"><span>Supplier Part Number：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" readonly="readonly" id="supplierpartnumber" name="S_supplierpartnumber" value="${item['supplierpartnumber']}" />
+					</td>
+				</tr>
+				<tr>
+					<td class="td_table_1"><span>Property：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" readonly="readonly" id="property" name="S_property" value="${item['property']}" />
+					</td>
+				</tr>
+				<tr>
+					<td class="td_table_1"><span>Value：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" readonly="readonly" id="value" name="S_value" value="${item['value']}" />
+					</td>
+				</tr>
+				<tr>
+					<td class="td_table_1"><span>SupplierName：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" readonly="readonly" id="suppliername" name="S_suppliername" value="${item['suppliername']}" />
 					</td>
 				</tr>
 			</table>

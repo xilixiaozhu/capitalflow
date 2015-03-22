@@ -16,44 +16,77 @@
 			<input type="hidden" name="processId" value="${processId }" />
 			<input type="hidden" name="orderId" value="${orderId }" />
 			<input type="hidden" name="taskId" value="${taskId }" />
+			<input type="hidden" name="S_apply.operator" value="${operator  }" />
+			<input type="hidden" name="S_approveDept.operator" value="${operator }" />
+			<input type="hidden" class="input_240" name="S_approveBoss.operator" value="${operator }" />
 			<table class="table_all" align="center" border="0" cellpadding="0"
 			cellspacing="0" style="margin-top: 0px">
 				<tr>
-					<td class="td_table_1"><span>请假人名称：</span></td>
+					<td class="td_table_1"><span>零件名称：</span></td>
 					<td class="td_table_2" colspan="3">
-						<input type="text" class="input_240" readonly="readonly" name="S_apply.operator" value="${operator  }" />
+						<input type="text" class="input_240" name="S_componentname" value="" />
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>请假理由：</span></td>
+					<td class="td_table_1"><span>零件描述：</span></td>
 					<td class="td_table_2" colspan="3">
-						<textarea class="input_textarea_320" id="reason" name="S_reason"></textarea>
+						<textarea class="input_textarea_320" id="description" name="S_description"></textarea>
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>请假天数：</span></td>
+					<td class="td_table_1"><span>Customer Part Number：</span></td>
 					<td class="td_table_2" colspan="3">
-						<input type="text" class="input_240" id="day" name="I_day" value="" />天
+						<input type="text" class="input_240" id="customerpartnumber" name="S_customerpartnumber" value="" />
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>部门经理：</span></td>
+					<td class="td_table_1"><span>Customer Name：</span></td>
 					<td class="td_table_2" colspan="3">
-						<input type="text" class="input_240" name="S_approveDept.operator" value="${operator }" />
+						<input type="text" class="input_240" id="customername" name="S_customername" value="" />
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span>总经理：</span></td>
+					<td class="td_table_1"><span>Supplier Part Number：</span></td>
 					<td class="td_table_2" colspan="3">
-						<input type="text" class="input_240" name="S_approveBoss.operator" value="${operator }" />
+						<input type="text" class="input_240" id="supplierpartnumber" name="S_supplierpartnumber" value="" />
 					</td>
 				</tr>
 				<tr>
-					<td class="td_table_1"><span><font color="red">注意：</font></span></td>
+					<td class="td_table_1"><span>Property：</span></td>
 					<td class="td_table_2" colspan="3">
-						<font color="red">部门经理、总经理文本框只是用于演示，你可以根据当前用户获取部门经理、总经理标识在后台设置变量<br>也可以直接在文本框中输入系统已经存在的用户[如：snaker、test]作为测试</font>
+						<input type="text" class="input_240" id="property" name="S_property" value="" />
 					</td>
 				</tr>
+				<tr>
+					<td class="td_table_1"><span>Value：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" id="value" name="S_value" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td class="td_table_1"><span>SupplierName：</span></td>
+					<td class="td_table_2" colspan="3">
+						<input type="text" class="input_240" id="suppliername" name="S_suppliername" value="" />
+					</td>
+				</tr>
+				<%--<tr>--%>
+					<%--<td class="td_table_1"><span>部门经理：</span></td>--%>
+					<%--<td class="td_table_2" colspan="3">--%>
+						<%--<input type="text" class="input_240" name="S_approveDept.operator" value="${operator }" />--%>
+					<%--</td>--%>
+				<%--</tr>--%>
+				<%--<tr>--%>
+					<%--<td class="td_table_1"><span>总经理：</span></td>--%>
+					<%--<td class="td_table_2" colspan="3">--%>
+						<%--<input type="text" class="input_240" name="S_approveBoss.operator" value="${operator }" />--%>
+					<%--</td>--%>
+				<%--</tr>--%>
+				<%--<tr>--%>
+					<%--<td class="td_table_1"><span><font color="red">注意：</font></span></td>--%>
+					<%--<td class="td_table_2" colspan="3">--%>
+						<%--<font color="red">部门经理、总经理文本框只是用于演示，你可以根据当前用户获取部门经理、总经理标识在后台设置变量<br>也可以直接在文本框中输入系统已经存在的用户[如：snaker、test]作为测试</font>--%>
+					<%--</td>--%>
+				<%--</tr>--%>
 			</table>
 			<table align="center" border="0" cellpadding="0"
 				cellspacing="0">

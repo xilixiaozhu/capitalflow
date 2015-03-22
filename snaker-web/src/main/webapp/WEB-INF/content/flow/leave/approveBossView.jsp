@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 	<head>
-		<title>请假流程</title>
+		<title>流程</title>
 		<%@ include file="/common/meta.jsp"%>
 		<link rel="stylesheet" href="${ctx}/styles/css/style.css" type="text/css" media="all" />
 		<script src="${ctx}/styles/js/jquery-1.8.3.min.js" type="text/javascript"></script>
@@ -21,7 +21,7 @@
 				cellspacing="0" style="margin-top: 0px">
 			<tr>
 				<td class="td_table_1">
-					<span>总经理审批结果：</span>
+					<span>审批结果：</span>
 				</td>
 				<td class="td_table_2" colspan="3">
 					&nbsp;${item['method'] == '0' ? '同意' : '' }${item['method'] == '-1' ? '不同意' : '' }
@@ -29,7 +29,7 @@
 			</tr>
 			<tr>
 				<td class="td_table_1">
-					<span>总经理审批意见：</span>
+					<span>审批意见：</span>
 				</td>
 				<td class="td_table_2" colspan="3">
 					&nbsp;${item['approveBoss.suggest'] }

@@ -21,7 +21,7 @@
 				cellspacing="0" style="margin-top: 0px">
 				<tr>
 					<td class="td_table_1">
-						<span>部门经理审批结果：</span>
+						<span>审批结果：</span>
 					</td>
 					<td class="td_table_2" colspan="3">
 						&nbsp;${item['method'] == '0' ? '同意' : '' }${item['method'] == '-1' ? '不同意' : '' }
@@ -29,7 +29,7 @@
 				</tr>
 				<tr>
 					<td class="td_table_1">
-						<span>部门经理审批意见：</span>
+						<span>审批意见：</span>
 					</td>
 					<td class="td_table_2" colspan="3">
 						&nbsp;${item['approveDept.suggest'] }

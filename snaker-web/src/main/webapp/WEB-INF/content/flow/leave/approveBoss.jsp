@@ -20,7 +20,7 @@
 				cellspacing="0" style="margin-top: 0px">
 			<tr>
 				<td class="td_table_1">
-					<span>总经理审批结果：</span>
+					<span>审批结果：</span>
 				</td>
 				<td class="td_table_2" colspan="3">
 					<input type="radio" name="method" value="0" checked="checked"/>同意
@@ -29,7 +29,7 @@
 			</tr>
 			<tr>
 				<td class="td_table_1">
-					<span>总经理审批意见：</span>
+					<span>审批意见：</span>
 				</td>
 				<td class="td_table_2" colspan="3">
 					<textarea class="input_textarea_320" id="approveBoss_suggest" name="approveBoss.suggest"></textarea>

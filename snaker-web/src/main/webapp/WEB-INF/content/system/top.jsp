@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="header">
-  <div class="logo"><div class="logo-title">江淮汽车线束零件管理系统---JAC Components Database(JCDB)</div></div>
+  <div class="logo"><img src="${ctx }/styles/images/snaker.png" alt="Snaker"/></div>
     <ul class="qj">
       <li style="width: 100px;"><span><shiro:principal/></span></li>
       <li></li>
@@ -21,7 +21,7 @@
 <div id="admin-nav-wrap">
   <div class="admin-nav">
     <ul>
-      <li><a href="${ctx}/index">首页</a></li>
+      <li><a href="http://snakerflow.com/" target="_blank">官网首页</a></li>
     </ul>
   </div>
 </div>
